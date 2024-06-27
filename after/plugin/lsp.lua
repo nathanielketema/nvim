@@ -23,6 +23,9 @@ lsp.configure('sumneko_lua', {
     }
 })
 
+
+vim.keymap.set("n", "<leader>ho", vim.lsp.buf.hover, {})
+
 lsp.setup()
 
 vim.diagnostic.config({
