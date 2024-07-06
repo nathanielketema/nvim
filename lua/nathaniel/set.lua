@@ -3,8 +3,6 @@ vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
--- vim.opt.rtp = /opt/homebrew/opt/fzf/
-
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -39,8 +37,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 -- smart search
--- vim.opt.ignorecase = true
--- vim.opt.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
--- vim.g.netrw_browsex_viewer="mupdf-gl" -- Everytime you press x in netrw it opens with mupdf-gl
+vim.g.netrw_browsex_viewer="mupdf-gl" -- Everytime you press x in netrw it opens with mupdf-gl
 vim.g.netrw_localrmdir='rm -r'
