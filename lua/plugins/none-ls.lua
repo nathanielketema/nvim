@@ -10,11 +10,11 @@ return {
                 null_ls.builtins.completion.spell,
                 null_ls.builtins.formatting.prettier,
                 null_ls.builtins.diagnostics.erb_lint,
-                null_ls.builtins.formatting.blue,
+                null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.isort,
             },
         })
 
-        vim.keymap.set("n", "<leader>=", vim.lsp.buf.format, {})
+        vim.keymap.set("n", "<leader>bf", vim.lsp.buf.format, {})
     end,
 }
