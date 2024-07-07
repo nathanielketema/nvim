@@ -51,6 +51,9 @@ return {
 			})
 			lspconfig.marksman.setup({
 				capabilities = capabilities,
+				root_dir = function()
+                    return "/Users/nathaniel/Library/Mobile Documents/iCloud~md~obsidian/Documents/second_brain"
+                end
 			})
 			lspconfig.yamlls.setup({
 				capabilities = capabilities,
