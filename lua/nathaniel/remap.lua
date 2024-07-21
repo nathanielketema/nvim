@@ -52,10 +52,6 @@ vim.keymap.set("n", "<C-j>", ":cnext<CR>")
 vim.keymap.set("n", "<C-k>", ":cprevious<CR>")
 vim.keymap.set("n", "K", ":vim /<C-R><C-W>/ **<CR>:copen<CR>")
 
--- FloatTerm
-vim.keymap.set("n", "<leader>tt", ":FloatermNew --width=0.7 --height=0.7<CR>")
-vim.keymap.set("n", "<leader>gg", ":FloatermNew --width=0.9 --height=0.9 lazygit<CR>")
-vim.keymap.set("n", "<leader>lf", ":FloatermNew --width=0.8 --height=0.8 lf<CR>")
 
 
 -- LaTeX
