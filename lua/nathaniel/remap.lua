@@ -42,7 +42,7 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- This lets you into terminal mode 
 vim.keymap.set("n", "<leader>hter", ":10 split<cr><c-w>j:ter<cr>i")
-vim.keymap.set("n", "run", ":45 vsplit<cr><c-w>l:ter<cr>i")
+vim.keymap.set("n", "run", ":80 vsplit<cr><c-w>l:ter<cr>i")
 
 vim.keymap.set("n", "<leader>go", ":Goyo<CR>")
 
@@ -56,4 +56,4 @@ vim.keymap.set("n", "K", ":vim /<C-R><C-W>/ **<CR>:copen<CR>")
 
 -- LaTeX
 vim.keymap.set("n", "<leader>rl", ":!pdflatex '%:.'<CR>")
-vim.keymap.set("n", "<leader>ol", ":!open '%:r'.pdf<CR>")
+vim.keymap.set("n", "<leader>op", ":!open '%:r'.pdf<CR>")
