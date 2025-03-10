@@ -3,6 +3,19 @@ return {
 
     config = function()
         local null_ls = require("null-ls")
+        local helpers = require("null-ls.helpers")
+
+        -- Define tex-fmt as a custom formatter
+        local tex_fmt = {
+            name = "tex-fmt",
+            method = null_ls.methods.FORMATTING,
+            filetypes = { "tex" },
+            generator = helpers.formatter_factory({
+                command = "tex-fmt",
+                args = { "--stdin" },
+                to_stdin = true,
+            }),
+        }
 
         null_ls.setup({
             sources = {
@@ -13,6 +26,7 @@ return {
                 null_ls.builtins.diagnostics.mypy,
                 null_ls.builtins.formatting.isort,
                 null_ls.builtins.formatting.csharpier,
+                tex_fmt, -- Add tex-fmt manually
             },
         })
 
