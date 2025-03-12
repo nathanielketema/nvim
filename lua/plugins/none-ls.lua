@@ -9,7 +9,7 @@ return {
         local tex_fmt = {
             name = "tex-fmt",
             method = null_ls.methods.FORMATTING,
-            filetypes = { "tex" },
+            filetypes = { "tex", "plaintex"},
             generator = helpers.formatter_factory({
                 command = "tex-fmt",
                 args = { "--stdin" },
