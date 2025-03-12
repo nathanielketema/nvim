@@ -56,4 +56,5 @@ vim.keymap.set("n", "K", ":vim /<C-R><C-W>/ **<CR>:copen<CR>")
 
 -- LaTeX
 vim.keymap.set("n", "<leader>rl", ":!pdflatex '%:.'<CR>")
+vim.keymap.set("n", "<leader>rb", ":!bibtex '%:r'<CR>")
 vim.keymap.set("n", "<leader>op", ":!open '%:r'.pdf<CR>")
